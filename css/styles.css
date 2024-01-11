@@ -60,6 +60,12 @@ img {
   max-width: 100%;
 }
 
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
 /*========= HEDER=========== */
 
 .header-nav,
@@ -75,6 +81,7 @@ img {
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
+
 .top-header .header-box {
   display: flex;
   align-items: center;
@@ -183,11 +190,64 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/img-name.jpg);
+    url(../images/bg_mobile.jpg);
   background-size: cover;
   background-position: center center;
   margin: 0 auto;
 }
+@media screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx),
+  screen and (min-device-pixel-ratio: 2) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bg_mobile@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bg_tablet.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx),
+  screen and (min-width: 768px) and (min-device-pixel-ratio: 2) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bg_tablet@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bg.jpg);
+  }
+}
+@media screen and (min-width: 1158px) and (min-resolution: 192dpi),
+  screen and (min-width: 1158px) and (min-resolution: 2dppx),
+  screen and (min-width: 1158px) and (min-device-pixel-ratio: 2) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bg@2x.jpg);
+  }
+}
+
 .hero-box {
   display: flex;
   flex-direction: column;
